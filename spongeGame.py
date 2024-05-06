@@ -68,10 +68,10 @@ class MyCar(pg.sprite.Sprite):
         if self.rect.y <= -20:##1
             self.rect.y = 10##1
     
-        if self.rect.x >= 800 and self.rect.y >= 180:
-            self.rect.y = 100
-            self.rect.x = 0
-        if self.rect.x <= -5 and self.rect.y <= 180:
+        if self.rect.x >= 80 and self.rect.y >= 18:##2
+            self.rect.y = 10##2
+            self.rect.x = 10##2
+        if self.rect.x <= -5 and self.rect.y <= 18:##2
             self.rect.y = 300
             self.rect.x = 790
 
