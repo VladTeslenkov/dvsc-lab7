@@ -114,7 +114,7 @@ class Road(pg.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.center = position
     def update(self):
-        self.rect.x -= 3
+        self.rect.x = 3##9
 
 class Traffic(pg.sprite.Sprite):
     def __init__(self, image, position, speed):
@@ -136,8 +136,8 @@ class Traffic(pg.sprite.Sprite):
 
 
 #СОЗДАЕМ ОБЪЕКТЫ И ДОБАВЛЯЕМ В ГРУППЫ
-myCar = MyCar((100,100),carImg)
-road = Road(roadImg,(800,200))
+myCar = MyCar((102,102),carImg)##9
+road = Road(roadImg,(810,210))##9
 roadGroup.add(road)
 road= Road(roadImg,(400,200))
 roadGroup.add(road)
