@@ -63,10 +63,10 @@ class MyCar(pg.sprite.Sprite):
         self.live = 5
 
     def border(self):
-        if self.rect.y >= 340:
-            self.rect.y = 330
-        if self.rect.y <= -10:
-            self.rect.y = 0
+        if self.rect.y >= 300:##1
+            self.rect.y = 300##1
+        if self.rect.y <= -20:##1
+            self.rect.y = 10##1
     
         if self.rect.x >= 800 and self.rect.y >= 180:
             self.rect.y = 100
