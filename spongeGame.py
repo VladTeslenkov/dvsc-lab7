@@ -125,11 +125,12 @@ class Traffic(pg.sprite.Sprite):
         self.rect.center = position
 
     def remove(self):
-        if self.rect.right > 950 or self.rect.left < -100:
+        if self.rect.right > 95 or self.rect.left < -10:##8
+            self.rect.right = 100##8
             self.kill()
 
     def update(self):
-        self.rect.x += self.speed
+        self.rect.x = self.speed##8
         self.remove()
 
 
