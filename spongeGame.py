@@ -165,6 +165,7 @@ def spawnTraffic(direct):
     trafficCarsGroup.add(trafficCar)
 def drawAll():
     roadGroup.update()
+    roadGroup.update()##10
     roadGroup.draw(screen)
     trafficCarsGroup.update()
     trafficCarsGroup.draw(screen)
@@ -175,11 +176,11 @@ def drawAll():
 
 
 #ШРИФТЫ
-score_font = pygame.font.SysFont("comicsansms", 35)
-levelFont = pygame.font.SysFont("comicsansms",25)
+score_font = pygame.font.SysFont("comicsansms", 25)##10
+levelFont = pygame.font.SysFont("comicsansms",15)##10
 font = pygame.freetype.Font(None, 30)
-value = 0
-Live = 5
+value = 10##10
+Live = 50##10
 
 def score():
     global value
