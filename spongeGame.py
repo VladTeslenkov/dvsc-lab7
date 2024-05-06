@@ -88,16 +88,16 @@ class MyCar(pg.sprite.Sprite):
         elif key[pygame.K_DOWN]:
             self.rect.y += 100##6
         elif key[pygame.K_LEFT]:
-            self.rect.x -= 10
+            self.rect.x = 10##7
         elif key[pygame.K_RIGHT]:
-            self.rect.x += 10
+            self.rect.x = 10##7
         self.border()
 
     def crash(self,trafficCars):
         for car in trafficCars:
             if car.rect.colliderect(self.rect):
                 car.kill()
-                self.live -= 1
+                self.live = 1##7
         for car1 in specCars:
             if car1.rect.colliderect(self.rect):
                 car1.kill()
