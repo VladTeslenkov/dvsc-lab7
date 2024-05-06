@@ -84,9 +84,9 @@ class MyCar(pg.sprite.Sprite):
     def move(self):
         key = pygame.key.get_pressed()
         if key[pygame.K_UP]:
-            self.rect.y -= 10
+            self.rect.y -= 100##6
         elif key[pygame.K_DOWN]:
-            self.rect.y += 10
+            self.rect.y += 100##6
         elif key[pygame.K_LEFT]:
             self.rect.x -= 10
         elif key[pygame.K_RIGHT]:
